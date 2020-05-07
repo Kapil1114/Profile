@@ -1,0 +1,131 @@
+/* Colours
+  Gunmetal----> #333642
+
+*/
+
+/*----------------Global-----------------*/
+html{
+  box-sizing: border-box;
+}
+
+*, *:after, *:before{
+  box-sizing: inherit;
+}
+
+body{
+  background-image: url(../images/download.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+  color: #f7ede2;
+  font-family: Montserrat;
+}
+
+main{
+  padding: 10px;
+}
+
+h1,h2,h3{
+  font-family: Caveat;
+
+  padding: 0 20px;
+  margin: 0;
+  font-weight: 400;
+}
+h3{
+  font-size: 30px;
+}
+p{
+  margin-bottom: 0;
+}
+.wrap{
+  max-width: 700px;
+  width: 85%;
+  margin: auto;
+  background: rgba(51,54,66,0.5);
+}
+
+.content{
+  padding: 15px;
+
+}
+
+/*----------------Profile-----------------*/
+
+header img{
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  position: relative;
+  top: 17px;
+  left: 32%;
+}
+
+
+/*----------------Social-----------------*/
+
+.social{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+
+}
+
+.button{
+  color: #000;
+  display: inline-block;
+  padding: 10px;
+  background-color: #c9b7ad;
+  border-radius: 4px;
+}
+
+/*----------------Responsive-----------------*/
+@media screen and (min-width: 650px){
+  h1{
+    font-size: 60px;
+    text-align: center;
+  }
+  h2{
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 900px){
+  h1{
+    font-size: 90px;
+    text-align: center;
+  }
+  h2{
+    font-size: 45px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 650px){
+  header img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    float: none;
+    opacity: 0.9;
+    top: -2px;
+    left: 27%;
+  }
+}
+@media screen and (max-width: 550px){
+  .social{
+      flex-direction: column;
+  }
+  .button{
+    padding: 5px;
+    background: none;
+    color: inherit;
+  }
+  .button:hover{
+    font-size: 20px;
+  }
+  .wrap{
+    width:100%;
+  }
+}
